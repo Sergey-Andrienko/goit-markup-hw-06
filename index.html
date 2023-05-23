@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>home work-4</title>
+    <title>home work-6</title>
   </head>
   <body>
     <header class="header-border">
@@ -430,6 +430,7 @@
         </div>
       </div>
     </footer>
+    <!-- modal window -->
     <div class="modal-window is-hidden" data-modal>
       <div class="modal-window-item">
         <button
@@ -440,6 +441,41 @@
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
+      <p>Leave your contacts and we will call you back</p>
+      <form name="modal_form">
+        <label for="modal_name">Name</label>
+        <div>
+          <input type="text">
+          <svg class="" width="20" height="20" name="modal_name" id="modal_name">
+            <use href=""></use>
+          </svg>
+        </div>
+        <label for="modal_phone">Phone</label>
+        <div>
+          <input type="text">
+          <svg class="" width="20" height="20" name="modal_phone" id="modal_phone">
+            <use href=""></use>
+          </svg>
+        </div>
+        <label for="modal_email">Email</label>
+        <div>
+          <input type="text">
+          <svg class="" width="20" height="20" name="modal_email" id="modal_email">
+            <use href=""></use>
+          </svg>
+        </div>
+
+        <label for="modal_comment">Comment</label>
+        <textarea name="modal_comment" id="modal_comment" cols="30" rows="10" placeholder="Text input">
+        
+        </textarea>
+        <label>
+          <input type="checkbox" name="modal_agreement">
+          <span>I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
+        </label>
+
+        <button class="hero-button" type="submit">Send</button>
+      </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
